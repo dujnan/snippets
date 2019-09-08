@@ -1,8 +1,27 @@
-#include <jni.h>
+/*****************************************************************************
+* File          : JavaToJni.cpp
+* Copyright     :
+* Description   :
+* Author        : Du Jiangnan
+* Version       : 1.0
+* History       : xxxx-xx-xx xxxx
+*                 xxxx-xx-xx xxxx
+*****************************************************************************/
 
+// Internal Includes
+// - None
+
+// C Standard Includes
 #include <stdio.h>
 #include <stdlib.h>
 
+// C++ Standard Includes
+// - None
+
+// Third-party Includes
+#include <jni.h>
+
+// Project Includes
 #include "NativeLogcat.h"
 
 #undef LOG_TAG
@@ -12,6 +31,16 @@ const char *MY_BUILD_VERSION = "JavaToJni 13";
 
 JavaVM* JniGlobalVM;
 jobject JniGlobalContext = NULL;
+
+/*****************************************************************************
+* Function      :
+* Description   :
+* Calls         :
+* Called By     :
+* Params        :
+* Return        :
+* Others        :
+*****************************************************************************/
 
 /**
  * Class:     com_skydjn_javatojni_MainActivity
@@ -95,7 +124,7 @@ static const char *classPathName = "com/djn/javatojni/MainActivity";
 /*****************************************************************************/
 /* Don't modify contents under this line
 /*****************************************************************************/
-const char *COMPILE_BUILD_TIME = __DATE__ ", " __TIME__; // ±àÒëÊ±¼ä
+const char *COMPILE_BUILD_TIME = __DATE__ ", " __TIME__; // Â±Ã Ã’Ã«ÃŠÂ±Â¼Ã¤
 /*
  * Register native methods for all classes we know about.
  */
